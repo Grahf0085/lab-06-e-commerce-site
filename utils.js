@@ -2,7 +2,7 @@ export function createFernsLi(fern) {
 
     const li = document.createElement('li');
 
-    li.classList.add(fern);
+    li.classList.add('fern');
 
     const pId = document.createElement('p');
 

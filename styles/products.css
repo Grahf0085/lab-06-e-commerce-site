@@ -1,13 +1,9 @@
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+
 }
 
 ul {
-    background-color:aquamarine;
-    width: 25%;
+    background-color:darkcyan;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,4 +12,9 @@ ul {
 
 li {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
 }
