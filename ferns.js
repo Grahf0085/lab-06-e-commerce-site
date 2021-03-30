@@ -31,7 +31,7 @@ export const ferns = [
         id: 'Christmas Fern',
         name: 'Polystichum acrostichoides',
         image: 'https://1.bp.blogspot.com/_mBWypOKRJSg/S-9eKqqZi9I/AAAAAAAAAeg/tFoAd14IMoI/s1600/christmas_fern.jpg',
-        description: 'Christmas fern has a tufted, clumping habit, with its fronds arising from a central growth point. It can form colonies, but frequently grows singly or in twos or threes.[4] In winter, the fertile fronds die; the sterile fronds remain through the winter, and are often flattened to the ground by low temperatures and snow cover. The frond is supported by a dark brown- to black-colored stipe, or stem, which is typically a quarter to a third of the overall frond length. Coarse, light-brown-to-tan scales cover the stipe, and are typically about 5 mm long and translucent. The coiled, developing fronds ("crosiers") are scaly, greyish and prominent in early spring.',
+        description: 'Christmas fern has a tufted, clumping habit, with its fronds arising from a central growth point. It can form colonies, but frequently grows singly or in twos or threes. In winter, the fertile fronds die; the sterile fronds remain through the winter, and are often flattened to the ground by low temperatures and snow cover. The frond is supported by a dark brown- to black-colored stipe, or stem, which is typically a quarter to a third of the overall frond length. Coarse, light-brown-to-tan scales cover the stipe, and are typically about 5 mm long and translucent. The coiled, developing fronds ("crosiers") are scaly, greyish and prominent in early spring.',
         category: 'Dryopteridaceae',
         price: '$100',
     },

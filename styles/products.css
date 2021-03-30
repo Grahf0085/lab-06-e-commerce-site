@@ -1,20 +1,59 @@
-main {
+body {
+--antique-brass: hsla(21, 43%, 65%, 1);
+--champagne-pink: hsla(22, 43%, 88%, 1);
+--linen: hsla(26, 100%, 95%, 1);
+--isabelline: hsla(48, 14%, 93%, 1);
+--desert-sand: hsla(24, 43%, 76%, 1);
+--artichoke: hsla(60, 12%, 60%, 1);
+--ash-gray: hsla(60, 12%, 68%, 1);
+
 
 }
 
-ul {
-    background-color:darkcyan;
+main {
+    background-color: var(--champagne-pink);
+    text-align: center;
+}
+
+/* ul {
+    background-color: var(--artichoke);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+} */
 
 li {
     list-style: none;
-    display: flex;
-    flex-direction: column;
+    background-color: var(--antique-brass);
+    width: 30%;
+    height: 50%;
+    margin: 10px;
+    padding: 10px;
 }
 
 img {
+    width: 150px;
+    height: 150px;
+}
+
+.fern-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--desert-sand);
+}
+
+.fern {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+}
+
+p {
+    margin: 5px 0px;
+    height: 100%;
 }
