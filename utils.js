@@ -19,6 +19,7 @@ export function createFernsLi(fern) {
     image.src = fern.image;
 
     const pDescription = document.createElement('p');
+    const expected = '<tr><td>Polystichum munitum</td><td>15</td><td></td></tr>';
 
     pDescription.classList.add('description');
     pDescription.textContent = fern.description;
