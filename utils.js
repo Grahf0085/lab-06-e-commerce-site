@@ -47,3 +47,7 @@ export function findById(id, array) {
         if (id === item.id) return item;
     }
 }
+
+export function calcItemTotal(quantity, unitCost) {
+    return Math.round((quantity * unitCost) * 100) / 100;
+}
