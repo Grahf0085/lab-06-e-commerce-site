@@ -12,7 +12,7 @@ export function createFernsLi(fern) {
     const pName = document.createElement('p');
 
     pName.classList.add('name');
-    pName.textConent = fern.name;
+    pName.textContent = fern.name;
 
     const image = document.createElement('img');
 

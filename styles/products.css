@@ -6,15 +6,19 @@ body {
 --desert-sand: hsla(24, 43%, 76%, 1);
 --artichoke: hsla(60, 12%, 60%, 1);
 --ash-gray: hsla(60, 12%, 68%, 1);
-
-
 }
 
 main {
     background-color: var(--champagne-pink);
     text-align: center;
+    height: 100%;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* ul {
     background-color: var(--artichoke);
     display: flex;
@@ -28,14 +32,16 @@ li {
     list-style: none;
     background-color: var(--antique-brass);
     width: 30%;
-    height: 50%;
-    margin: 10px;
-    padding: 10px;
+    height: 100%;
+    margin: 5px;
+    padding: 1%;
+    border: 3px solid black;
 }
 
 img {
     width: 150px;
     height: 150px;
+    padding: 0px;
 }
 
 .fern-list {
@@ -43,6 +49,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: var(--desert-sand);
+    border: 5px black solid;
 }
 
 .fern {
@@ -54,6 +61,10 @@ img {
 }
 
 p {
-    margin: 5px 0px;
+    margin: 10px 10px;
     height: 100%;
+}
+
+button {
+    margin: 10px;
 }
