@@ -10,7 +10,7 @@ export const ferns = [
     },
 
     {
-        id: 'Barchen Fern',
+        id: 'Brachen Fern',
         name: 'Pteridium aquilinum',
         image: 'http://minnesotaseasons.com/Plants/Large/W/western_bracken_fern_07.jpg',
         description: 'Brackens are noted for their large, highly divided leaves. They are found on all continents except Antarctica and in all environments except deserts, though their typical habitat is moorland. The genus probably has the widest distribution of any fern in the world.',
