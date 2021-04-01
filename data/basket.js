@@ -1,11 +1,11 @@
 export const basket = [
     {
         id: 'Sword Fern',
-        quantity: 3
+        quantity: 1
     },
     {
         id: 'Brachen Fern',
-        quantity: 2
+        quantity: 1
     },
     {
         id: 'Oak Fern',
@@ -13,10 +13,10 @@ export const basket = [
     },
     {
         id: 'Christmas Fern',
-        quantity: 50
+        quantity: 1
     },
     {
         id: 'Holy Fern',
-        quantity: 4
+        quantity: 1
     }
 ];

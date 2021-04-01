@@ -19,7 +19,6 @@ export function createFernsLi(fern) {
     image.src = fern.image;
 
     const pDescription = document.createElement('p');
-    const expected = '<tr><td>Polystichum munitum</td><td>15</td><td></td></tr>';
 
     pDescription.classList.add('description');
     pDescription.textContent = fern.description;
@@ -51,4 +50,17 @@ export function findById(id, array) {
 
 export function calcItemTotal(quantity, unitCost) {
     return Math.round((quantity * unitCost) * 100) / 100;
+}
+
+export function calcOrderTotal(basketArray, fernArray) {
+    let total = 0;
+
+    for (let basketItem of basketArray) {
+
+        const matchingFern = findById(basketItem.id, fernArray);
+        const linePrice = calcItemTotal(basketItem.quantity, matchingFern.price);
+        console.log(matchingFern);
+        total += linePrice;
+    }
+    return total;
 }
