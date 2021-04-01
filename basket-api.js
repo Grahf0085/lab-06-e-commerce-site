@@ -1,6 +1,6 @@
 import { findById } from './utils.js';
 
-const BASKET = 'BASKET'; // wby is this necessary?
+const BASKET = 'BASKET'; // why is this necessary?
 
 export function getBasket() {
     const stringyBasket = localStorage.getItem('BASKET');
