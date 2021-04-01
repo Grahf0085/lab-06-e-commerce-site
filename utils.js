@@ -59,7 +59,6 @@ export function calcOrderTotal(basketArray, fernArray) {
 
         const matchingFern = findById(basketItem.id, fernArray);
         const linePrice = calcItemTotal(basketItem.quantity, matchingFern.price);
-        console.log(matchingFern);
         total += linePrice;
     }
     return total;

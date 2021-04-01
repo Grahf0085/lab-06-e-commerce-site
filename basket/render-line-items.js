@@ -16,3 +16,4 @@ export function renderLineItems(basketItem, fern) {
 
     return newTr;
 }
+

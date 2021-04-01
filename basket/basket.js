@@ -2,10 +2,12 @@ import { basket } from '../data/basket.js';
 import { ferns } from '../ferns.js';
 import { renderLineItems } from '../basket/render-line-items.js';
 import { findById } from '../utils.js';
-// import { calcOrderTotal } from '../utils.js';
+import { calcOrderTotal } from '../utils.js';
 
 const table = document.querySelector('table');
-console.log(table);
+const total = calcOrderTotal(basket, ferns);
+
+
 for (let basketItem of basket) {
 
     const matchingFern = findById(basketItem.id, ferns);
@@ -15,3 +17,14 @@ for (let basketItem of basket) {
     table.append(tr);
 }
 
+
+const newTr = document.createElement('tr');
+const footerOne = document.createElement('td');
+const footerTwo = document.createElement('td');
+const footerThree = document.createElement('td');
+
+footerOne.textContent = 'Total: ';
+footerThree.textContent = `${total}`;
+
+newTr.append(footerOne, footerTwo, footerThree);
+table.append(newTr);
