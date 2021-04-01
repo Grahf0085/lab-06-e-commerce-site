@@ -23,9 +23,7 @@ export function renderLineItems(basketItem, fern) {
     return newTr;
 }
 
-if (basket.length === 0) {
-    button.disabled = true;
-}
+if (basket.length === 0) button.disabled = true;
 
 button.addEventListener('click', () => {
     alert(JSON.stringify(basket, true, 2));
