@@ -1,28 +1,17 @@
 import { findById } from './utils.js';
 
-const BASKET = 'basket'; // wby is this necessary?
+const BASKET = 'BASKET'; // wby is this necessary?
 
 export function getBasket() {
     const stringyBasket = localStorage.getItem('BASKET');
 
     const parsedBasket = JSON.parse(stringyBasket);
 
-    if (parsedBasket) return parsedBasket; // why would just having a parsedBasket mean it's not empty?  I'll roll with it
-    else return [];
-}
-
-export function addItemToCart(productId) {
-    const basket = getBasket();
-
-    const matchingItem = findById(productId, basket);
-
-    if (matchingItem) basket.quantity++;
+    if (parsedBasket) {
+        return parsedBasket;
+    }// why would just having a parsedBasket mean it's not empty?  I'll roll with it
     else {
-        const lineItem = {
-            id: productId,
-            quantity: 1
-        };
-        basket.push(lineItem);
+        return [];
     }
 }
 
@@ -32,3 +21,23 @@ export function setBasket(parsedBasket) {
 
     localStorage.setItem(BASKET, stringyBasket);
 }
+
+export function addItemToBasket(productId) {
+    const basket = getBasket();
+
+    const matchingItem = findById(productId, basket);
+
+    if (matchingItem) {
+        matchingItem.quantity++;
+    }
+    else {
+        const lineItem = {
+            id: productId,
+            quantity: 1
+        };
+        basket.push(lineItem);
+    }
+    setBasket(basket);
+}
+
+

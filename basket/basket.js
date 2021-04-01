@@ -1,9 +1,11 @@
-import { basket } from '../data/basket.js';
+//{ basket } from '../data/basket.js';
 import { ferns } from '../ferns.js';
 import { renderLineItems } from '../basket/render-line-items.js';
 import { findById } from '../utils.js';
 import { calcOrderTotal } from '../utils.js';
+import { getBasket } from '../basket-api.js';
 
+const basket = getBasket();
 const table = document.querySelector('table');
 const total = calcOrderTotal(basket, ferns);
 
