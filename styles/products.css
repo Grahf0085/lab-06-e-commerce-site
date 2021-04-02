@@ -34,7 +34,7 @@ li {
     width: 30%;
     height: 100%;
     margin: 5px;
-    padding: 1%;
+    padding: 3%;
     border: 3px solid black;
 }
 
@@ -65,5 +65,9 @@ p {
 }
 
 button {
+    margin: 10px;
+}
+
+select {
     margin: 10px;
 }

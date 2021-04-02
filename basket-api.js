@@ -22,18 +22,18 @@ export function setBasket(parsedBasket) {
     localStorage.setItem(BASKET, stringyBasket);
 }
 
-export function addItemToBasket(productId) {
+export function addItemToBasket(productId, numberOrdered) {
     const basket = getBasket();
 
     const matchingItem = findById(productId, basket);
 
     if (matchingItem) {
-        matchingItem.quantity++;
+        matchingItem.quantity += numberOrdered;
     }
     else {
         const lineItem = {
             id: productId,
-            quantity: 1
+            quantity: numberOrdered
         };
         basket.push(lineItem);
     }

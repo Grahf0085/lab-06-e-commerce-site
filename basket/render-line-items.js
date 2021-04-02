@@ -6,6 +6,7 @@ const basket = getBasket();
 
 const button = document.querySelector('button');
 button.disabled = false;
+
 export function renderLineItems(basketItem, fern) {
 
     const newTr = document.createElement('tr');

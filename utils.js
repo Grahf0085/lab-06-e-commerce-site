@@ -38,12 +38,25 @@ export function createFernsLi(fern) {
     const button = document.createElement('button');
 
     button.addEventListener('click', () => {
-        addItemToBasket(fern.id);
+        addItemToBasket(fern.id, quantity.value);
     });
 
     button.textContent = 'Add to Basket';
 
-    li.append(pId, pName, image, pDescription, pCategory, pPrice, button);
+    const quantity = document.createElement('select');
+
+    quantity.options[0] = new Option('One', 1);
+    quantity.options[1] = new Option('Two', 2);
+    quantity.options[2] = new Option('Three', 3);
+    quantity.options[3] = new Option('Four', 4);
+    quantity.options[4] = new Option('Five', 5);
+    quantity.options[5] = new Option('Six', 6);
+    quantity.options[6] = new Option('Seven', 7);
+    quantity.options[7] = new Option('Eight', 8);
+    quantity.options[8] = new Option('Nine', 9);
+    quantity.options[9] = new Option('Ten', 10);
+
+    li.append(pId, pName, image, pDescription, pCategory, pPrice, quantity, button);
 
     return li;
 }
