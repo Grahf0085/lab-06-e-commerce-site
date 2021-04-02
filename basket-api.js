@@ -40,4 +40,9 @@ export function addItemToBasket(productId, numberOrdered) {
     setBasket(basket);
 }
 
+export function clearBasket() {
+    localStorage.removeItem(BASKET);
+    window.location = '/';
+}
+
 
