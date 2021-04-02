@@ -1,4 +1,4 @@
-import { renderLineItems } from '../basket/render-line-items.js';
+import { renderLineItems } from '../renderLineFunction.js';
 
 const test = QUnit.test;
 
@@ -22,5 +22,5 @@ test('time to test a function', (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual.outerHTML, expected);
+    expect.equal(actual.outerHTML, expected, 'render linetest');
 });
