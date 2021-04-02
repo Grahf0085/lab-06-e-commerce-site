@@ -1,3 +1,5 @@
+import { addItemToBasket } from './basket-api.js';
+
 export function createFernsLi(fern) {
 
     const li = document.createElement('li');
@@ -34,6 +36,10 @@ export function createFernsLi(fern) {
     pPrice.textContent = fern.price;
 
     const button = document.createElement('button');
+
+    button.addEventListener('click', () => {
+        addItemToBasket(fern.id);
+    });
 
     button.textContent = 'Add to Basket';
 
