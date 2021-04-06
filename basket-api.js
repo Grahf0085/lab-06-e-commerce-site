@@ -42,7 +42,7 @@ export function addItemToBasket(productId, numberOrdered) {
 
 export function clearBasket() {
     localStorage.removeItem(BASKET);
-    window.location = '/';
+    window.location = './';
 }
 
 
